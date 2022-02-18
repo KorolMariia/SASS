@@ -1,0 +1,19 @@
+@mixin container($mw: 1140px, $px: 15px) {
+  max-width: $mw;
+  margin: 0 auto;
+  padding: 0 $px;
+}
+
+@mixin var($i) {
+  @if $i == 1 {
+    content: "the first one";
+  } @else if $i == 2 {
+    content: "2";
+  } @else if $i == 3 {
+    content: "3";
+  } @else if $i == 4 {
+    content: "4";
+  } @else {
+    content: "the last one";
+  }
+}
